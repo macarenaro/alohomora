@@ -1,15 +1,18 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+}
 
 body {
   background-image: url(../multimedia/fondo.jpg);
   background-color: #040404;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed; }
-
+  background-attachment: fixed; 
+}
+                                            /*  */
+                                /* header de todos los html */
 header {
   position: fixed;
   background-color: transparent;
@@ -20,10 +23,15 @@ header {
   justify-content: space-between;
   align-items: flex-start;
   z-index: 500; }
+  
+  /* logo */
   header .header__logo {
     width: 100px;
     border-radius: 100%;
     margin: 7px; }
+
+                                        /*  */
+                                /* menù de navegacion */
   header #botonMenu {
     background-color: black;
     border: 3px dotted #DAA520; }
@@ -55,6 +63,9 @@ header {
         color: #DAA520;
         text-decoration: underline #DAA520 2px; }
 
+
+                                          /*  */
+                        /* H1 y H2 generales de todos los html */
 h1 {
   font-family: 'Caveat', cursive;
   color: #DAA520;
@@ -71,6 +82,9 @@ h2 {
   font-family: 'Caveat', cursive;
   color: #DAA520; }
 
+
+                                        /*  */
+                                  /* estilos index.html  */
 #cajaIndex {
   background-color: black;
   border: 5px ridge #DAA520; }
@@ -78,17 +92,29 @@ h2 {
     font-family: 'Gabriela', serif;
     color: white;
     text-align: center; }
+  #cajaIndex #h4Index:hover {
+    color: #DAA520;
+    text-decoration: underline #DAA520 2px; }
 
+
+                                       /*  */
+                          /* estilos peliculas.html */
+
+/* tarjetas de peliculas */
 #tarjetaPeli {
   background-color: black;
   border: 5px ridge #DAA520; }
+ 
   #tarjetaPeli #sinopsis {
     font-family: 'Gabriela', serif;
     color: white; }
+    
     #tarjetaPeli #sinopsis #tituloPeli {
       color: #DAA520;
       font-family: 'Caveat', cursive;
       text-align: center; }
+
+      /* enlace "ver el trailer" */
   #tarjetaPeli #trailer {
     font-family: 'Caveat', cursive;
     color: #DAA520;
@@ -96,9 +122,15 @@ h2 {
     text-align: center;
     margin-bottom: 5px; }
 
+
+                                            /*  */
+                                  /*estilos personajes.html  */
+
 #letraPersonajes {
   font-family: 'Caveat', cursive;
   color: white; }
+  
+  /* animacion de la fotos */
   #letraPersonajes #tarjetaPersonajes:hover {
     transform: scale(1.3, 1.3);
     transition: 1s;
@@ -106,6 +138,10 @@ h2 {
   #letraPersonajes #nombrePersonajes {
     background-color: black;
     border: 5px ridge #DAA520; }
+
+
+                                                /*  */
+                                      /*estilos hogwarts.html  */
 
 .mainColegio {
   display: flex;
@@ -123,6 +159,8 @@ h2 {
     height: auto;
     background-color: black;
     border: 10px ridge #DAA520; }
+
+    /* historia del colegio */
     .mainColegio .sectionColegio .boxColegio {
       display: flex;
       flex-direction: row;
@@ -135,6 +173,8 @@ h2 {
         margin: 15px; }
       .mainColegio .sectionColegio .boxColegio .imagCastillo {
         width: 40%; }
+    
+    /*  casas del colegio*/
     .mainColegio .sectionColegio .boxCasas {
       display: flex;
       flex-direction: column;
@@ -147,6 +187,8 @@ h2 {
         text-align: justify;
         margin-left: 30px;
         margin-right: 30px; }
+
+      /* banderines y test */
       .mainColegio .sectionColegio .boxCasas .boxBanderines {
         display: flex;
         flex-direction: row;
@@ -156,6 +198,8 @@ h2 {
         width: 90vw; }
         .mainColegio .sectionColegio .boxCasas .boxBanderines .banderines {
           width: 30%; }
+        
+          /* test */
         .mainColegio .sectionColegio .boxCasas .boxBanderines .testCasas {
           text-decoration: none;
           font-family: 'Caveat', cursive;
@@ -167,6 +211,10 @@ h2 {
           padding: 5px;
           margin: 10px; }
 
+
+                                          /*  */
+                                  /*estilos autora.html  */
+
 .mainjk {
   display: flex;
   flex-direction: column;
@@ -177,6 +225,8 @@ h2 {
     border: 10px ridge #DAA520;
     width: 90vw;
     height: auto; }
+
+    /* caja biografia de la autora y foto */
     .mainjk .sectionJk .biografria {
       color: white;
       font-family: 'Gabriela', serif;
@@ -185,17 +235,24 @@ h2 {
       flex-flow: row nowrap; }
       .mainjk .sectionJk .biografria .textoBiog {
         margin: 20px; }
+        /* imagen */
       .mainjk .sectionJk .biografria .imagenBiog {
         width: 30%;
         margin: 30px 20px 60px 10px; }
+
+    /* carrusel y enlace a su pagina personal */
     .mainjk .sectionJk .linkYcarrusel {
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-around;
       align-items: center; }
+
+      /* carrusel */
       .mainjk .sectionJk .linkYcarrusel .anchoCarrusel {
         width: 50%;
         margin: 10px; }
+      
+      /* enlace a su pagina */
       .mainjk .sectionJk .linkYcarrusel .enlace {
         font-family: 'Caveat', cursive;
         text-decoration: none;
@@ -209,6 +266,9 @@ h2 {
       .mainjk .sectionJk .linkYcarrusel .enlace:hover {
         color: #DAA520; }
 
+
+                                          /*  */
+                                      /* footer */
 .footer {
   background-color: black;
   width: 100%;
@@ -218,14 +278,22 @@ h2 {
   padding: 10px;
   font-family: 'Gabriela', serif;
   font-size: 100%; }
+
   .footer .footerTexto {
     color: white; }
+
     .footer .footerTexto .footerEnlace {
       color: white;
       transition: initial; }
+
     .footer .footerTexto .footerEnlace:hover {
       color: #DAA520;
       text-decoration: underline 2px; }
+
+
+
+                                       /*  */
+                            /* media querie celulares */
 
 @media only screen and (max-width: 641px) {
   body {
@@ -245,12 +313,15 @@ h2 {
     font-size: 40px;
     letter-spacing: 4px;
     text-shadow: 0 0 0.2em black, 0 0 0.2em black, 0 0 0.2em black; }
-  .mainColegio {
+    
+                              /* estilos hogwarts.html */
+    .mainColegio {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center; }
+
     .mainColegio .sectionColegio {
       display: flex;
       flex-direction: column;
@@ -261,6 +332,8 @@ h2 {
       height: auto;
       background-color: black;
       border: 10px ridge #DAA520; }
+
+      /* historia del colegio */
       .mainColegio .sectionColegio .boxColegio {
         display: flex;
         flex-direction: column;
@@ -268,40 +341,55 @@ h2 {
         align-items: center; }
         .mainColegio .sectionColegio .boxColegio .imagCastillo {
           width: 70%; }
+
+                            /* estilos autora.html */
   .mainjk {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+
     .mainjk .sectionJk {
       background-color: black;
       border: 10px ridge #DAA520;
       width: 90vw;
       height: auto; }
+
+      /* caja biografia de la autora y foto */
       .mainjk .sectionJk .biografria {
         color: white;
         font-family: 'Gabriela', serif;
         text-align: justify;
         display: flex;
         flex-flow: row nowrap; }
+
         .mainjk .sectionJk .biografria .imagenBiog {
           display: none; }
+
+      /* carrusel y enlace a su pagina personal  */
       .mainjk .sectionJk .linkYcarrusel {
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center; }
+
         .mainjk .sectionJk .linkYcarrusel .anchoCarrusel {
           width: 80%;
           margin: 10px; } }
 
+                                            /*  */
+                                /*  media querie tablet */
+
 @media only screen and (max-width: 1025px) {
+
+                            /* estilos hogwarts.html */
   .mainColegio {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center; }
+
     .mainColegio .sectionColegio {
       display: flex;
       flex-direction: column;
@@ -312,36 +400,51 @@ h2 {
       height: auto;
       background-color: black;
       border: 10px ridge #DAA520; }
+
+      /* historia del colegio */
       .mainColegio .sectionColegio .boxColegio {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center; }
+
         .mainColegio .sectionColegio .boxColegio .imagCastillo {
           width: 70%; }
+
+          
+                            /* estilos autora.html */
   .mainjk {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+
     .mainjk .sectionJk {
       background-color: black;
       border: 10px ridge #DAA520;
       width: 90vw;
       height: auto; }
+
+      /* caja biografia de la autora y foto */
       .mainjk .sectionJk .biografria {
         color: white;
         font-family: 'Gabriela', serif;
         text-align: justify;
         display: flex;
         flex-flow: row nowrap; }
+
         .mainjk .sectionJk .biografria .imagenBiog {
           height: 20%; }
+
+      /* carrusel y enlace a su pagina personal */
       .mainjk .sectionJk .linkYcarrusel {
         display: flex;
         flex-flow: wrap-reverse;
         justify-content: center;
         align-items: center; }
+
         .mainjk .sectionJk .linkYcarrusel .anchoCarrusel {
           width: 70%;
           margin: 10px; } }
+
+/* fin */

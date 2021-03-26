@@ -21,6 +21,8 @@ header {
     justify-content: space-between;
     align-items: flex-start;
     z-index: 500;
+
+    // logo
     .header__logo {
         width: 100px;
         border-radius: 100%;
@@ -57,9 +59,9 @@ header {
                 transition: initial;
             }
             a:hover {
-                    color: #DAA520;
-                    text-decoration: underline #DAA520 2px;
-                }            
+                color: #DAA520;
+                text-decoration: underline #DAA520 2px;
+            }            
             
         } 
     }
@@ -93,10 +95,16 @@ h2 {
         color: white;
         text-align: center;
     }
+    #h4Index:hover {
+        color: #DAA520;
+        text-decoration: underline #DAA520 2px;
+    }         
 }
 
 // 
 // estilos peliculas.html
+
+// tretas de peliculas
 #tarjetaPeli {
     background-color: black;
     border: 5px ridge #DAA520;
@@ -173,6 +181,7 @@ h2 {
                 width: 40%;
             }        
         }
+
         // casas del colegio
         .boxCasas {
             display: flex;
@@ -198,6 +207,7 @@ h2 {
                 .banderines {
                     width: 30%;
                 } 
+                // test
                 .testCasas {
                     text-decoration: none;
                     font-family: 'Caveat', cursive;
@@ -251,7 +261,7 @@ h2 {
                 width: 50%;
                 margin: 10px;
             }
-            // enlace
+            // enlace a su pagina 
             .enlace {
                 font-family: 'Caveat', cursive;
                 text-decoration: none;
