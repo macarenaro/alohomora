@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(../multimedia/fondo.jpg);
+    background-color: #040404;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+// header de todos los html
+header {
+    position: fixed;
+    background-color: transparent;
+    width: 100%;
+    height: 13vh;
+    margin-bottom: 30px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 500;
+    .header__logo {
+        width: 100px;
+        border-radius: 100%;
+        margin: 7px;
+    }
+    // menù de navegacion
+    #botonMenu {
+        background-color: black;
+        border: 3px dotted #DAA520;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        li {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: center;
+            margin-right: 3px;
+            width: 100px;
+            font-size: medium;
+            background-color: black;
+            border-right: 3px dotted #DAA520;
+            border-left: 3px dotted #DAA520;
+            a {
+                font-family: 'Caveat', cursive;
+                color: white;
+                font-size: 20px;
+                text-decoration: none;
+                padding: 5px;
+                transition: initial;
+            }
+            a:hover {
+                    color: #DAA520;
+                    text-decoration: underline #DAA520 2px;
+                }            
+            
+        } 
+    }
+}
+
+// H1 y H2 generales de todos los html
+h1 {
+        font-family: 'Caveat', cursive;
+        color: #DAA520;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 250px;
+        padding-top: 300px;
+        font-size: 80px;
+        letter-spacing: 4px;
+        text-shadow: 0 0 0.2em black, 0 0 0.2em black, 0 0 0.2em black;
+    }
+
+h2 {
+    font-family: 'Caveat', cursive;
+    color: #DAA520;
+}
+
+// estilos index.html
+#cajaIndex{
+    background-color: black;
+    border: 5px ridge #DAA520;
+    #h4Index{
+        font-family: 'Gabriela', serif;
+        color: white;
+        text-align: center;
+    }
+}
+
+// 
+// estilos peliculas.html
+#tarjetaPeli {
+    background-color: black;
+    border: 5px ridge #DAA520;
+
+    #sinopsis {
+        font-family: 'Gabriela', serif;
+        color: white;
+
+        #tituloPeli {
+            color: #DAA520;
+            font-family: 'Caveat', cursive;
+            text-align: center;
+        }    
+    }
+    // enlace "ver el trailer"
+    #trailer {
+        font-family: 'Caveat', cursive;
+        color: #DAA520;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+}
+
+// 
+// estilos personajes.html
+#letraPersonajes {
+    font-family: 'Caveat', cursive;
+    color: white;
+    // animación de las fotos
+    #tarjetaPersonajes:hover {
+        transform: scale(1.3, 1.3);
+        transition: 1s;
+        z-index: 500;
+    }
+    #nombrePersonajes {
+        background-color: black;
+        border: 5px ridge #DAA520;
+    }   
+}
+
+// 
+// estilos hogwarts.html
+.mainColegio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    .sectionColegio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 90vw;
+        height: auto;
+        background-color: black;
+        border: 10px ridge #DAA520;
+
+        // historia del colegio
+        .boxColegio {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            .textoColegio {
+                color: white;
+                font-family: 'Gabriela', serif;
+                text-align: justify;
+                margin: 15px;
+            }
+            .imagCastillo {
+                width: 40%;
+            }        
+        }
+        // casas del colegio
+        .boxCasas {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            .textoCasas {
+                color: white;
+                font-family: 'Gabriela', serif;
+                text-align: justify;
+                margin-left: 30px;
+                margin-right: 30px;
+            }  
+            // banderines y test   
+            .boxBanderines {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                width: 90vw;
+                .banderines {
+                    width: 30%;
+                } 
+                .testCasas {
+                    text-decoration: none;
+                    font-family: 'Caveat', cursive;
+                    color: white;
+                    text-align: center;
+                    border: solid #DAA520 2px;
+                    background-color: black;
+                    border-radius: 7px;
+                    padding: 5px;
+                    margin: 10px;
+                }        
+            }
+        }
+    }
+}
+
+// 
+// estilos autora.html
+.mainjk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .sectionJk {
+        background-color: black;
+        border: 10px ridge #DAA520;
+        width: 90vw;
+        height: auto;
+        // caja biografia de la autora y foto
+        .biografria {
+            color: white;
+            font-family: 'Gabriela', serif;
+            text-align: justify;
+            display: flex;
+            flex-flow: row nowrap;
+            .textoBiog {
+                margin: 20px;
+            }
+            .imagenBiog {
+                width: 30%;
+                margin: 30px 20px 60px 10px;
+            }
+        }
+        // carrusel y enlace a su pagina personal 
+        .linkYcarrusel {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: center;
+            .anchoCarrusel {
+                width: 50%;
+                margin: 10px;
+            }
+            // enlace
+            .enlace {
+                font-family: 'Caveat', cursive;
+                text-decoration: none;
+                color: white;
+                border: solid #DAA520 2px;
+                background-color: black;
+                border-radius: 7px;
+                padding: 5px;
+                margin: 10px;
+                font-size: x-large;
+            }
+            .enlace:hover {
+                color: #DAA520;
+            }
+        }
+    }
+}
+
+// 
+// footer
+.footer {
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    border-top: 2px solid #DAA520;
+    margin-top: 50px;
+    padding: 10px;
+    font-family: 'Gabriela', serif;
+    font-size: 100%;
+    .footerTexto {
+        color: white;
+        .footerEnlace {
+            color: white;
+            transition: initial;
+        }
+        .footerEnlace:hover {
+            color: #DAA520;
+            text-decoration: underline 2px;
+        }
+    }
+}
+
+// 
+// media querie celulares
+@media only screen and (max-width: 641px) {
+    body {
+        background-image: url(../multimedia/fondo.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+    }
+    h1 {
+        font-family: 'Caveat', cursive;
+        color: #DAA520;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 250px;
+        padding-top: 300px;
+        font-size: 40px;
+        letter-spacing: 4px;
+        text-shadow: 0 0 0.2em black, 0 0 0.2em black, 0 0 0.2em black;
+    }
+    // estilos hogwarts.html
+    .mainColegio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        .sectionColegio {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            width: 90vw;
+            height: auto;
+            background-color: black;
+            border: 10px ridge #DAA520;
+    
+            // historia del colegio
+            .boxColegio {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .imagCastillo {
+                    width: 70%;
+                }        
+            }
+        }
+    }
+   // 
+    // estilos autora.html
+    .mainjk {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .sectionJk {
+            background-color: black;
+            border: 10px ridge #DAA520;
+            width: 90vw;
+            height: auto;
+            // caja biografia de la autora y foto
+            .biografria {
+                color: white;
+                font-family: 'Gabriela', serif;
+                text-align: justify;
+                display: flex;
+                flex-flow: row nowrap;
+                .imagenBiog {
+                    display: none;
+                }
+            }
+            // carrusel y enlace a su pagina personal 
+            .linkYcarrusel {
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;    
+                .anchoCarrusel {
+                    width: 80%;
+                    margin: 10px;
+                }
+            }
+        }
+    }
+}
+
+// 
+// media querie tablet
+
+@media only screen and (max-width: 1025px) {
+    // estilos hogwarts.html
+    .mainColegio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        .sectionColegio {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            width: 90vw;
+            height: auto;
+            background-color: black;
+            border: 10px ridge #DAA520;
+
+            // historia del colegio
+            .boxColegio {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .imagCastillo {
+                    width: 70%;
+                }        
+            }
+        }
+    }
+
+    // estilos autora.html
+    .mainjk {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .sectionJk {
+            background-color: black;
+            border: 10px ridge #DAA520;
+            width: 90vw;
+            height: auto;
+            // caja biografia de la autora y foto
+            .biografria {
+                color: white;
+                font-family: 'Gabriela', serif;
+                text-align: justify;
+                display: flex;
+                flex-flow: row nowrap;
+                .imagenBiog {
+                    height: 20%;
+                }
+            }
+            // carrusel y enlace a su pagina personal 
+            .linkYcarrusel {
+                display: flex;
+                flex-flow: wrap-reverse;
+                justify-content: center;
+                align-items: center;    
+                .anchoCarrusel {
+                    width: 70%;
+                    margin: 10px;
+                }
+            }
+        }
+    }
+
+}
