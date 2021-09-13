@@ -61,6 +61,7 @@ header {
             a:hover {
                 color: #DAA520;
                 text-decoration: underline #DAA520 2px;
+                
             }            
             
         } 
@@ -90,10 +91,12 @@ h2 {
 #cajaIndex{
     background-color: black;
     border: 5px ridge #DAA520;
+    text-decoration: none;
     #h4Index{
         font-family: 'Gabriela', serif;
         color: white;
         text-align: center;
+        text-decoration: none;
     }
     #h4Index:hover {
         color: #DAA520;
